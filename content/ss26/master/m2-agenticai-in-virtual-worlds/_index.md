@@ -1,89 +1,55 @@
 +++
-
-
 project_id = "M2"
-title = "Agenticai in Virtual Worlds"
-
-# subtitle erscheint auf Übersichtsseite und Projektseite direkt unter dem Titel.
-# kurzer 2. titel, der klar über den Inhalt des Projektes informiert
-subtitle = "informativ, kurz - (subtitle)"
-
-# der claim oder auch teaser erscheint auf Übersichtsseite und Projektseite nach Titel und Subtitle
-claim = "Teaser - länger, fancy - ein Werbespruch, Mission Statement... soll neugierig machen (claim)"
-
-# Abstract - erscheint oberhalb der Sections auf der Projektseite. 
-# *** KANN WEGGELASSEN WERDEN ***, hat in der früheren Gliederung mehr sinn gemacht,
-# kann aber genutzt werden, um etwas vor die erste Section zu setzen.
-abstract = "die 1. Seite soll die unten angegebenen 3 Sections haben, die Titel der Sections können aber angepasst werden(dies ist das abstract)"
-
-# Properties for displaying the project in the project list
-card_image = "kitty.jpg"
-
-# Names are optional, team size is sufficient
-team = ["Member 1", "Member 2"]
-# this can be just one or a list as with team:
-supervisor = "Supervisor"
+title = "Agentic AI in virtual worlds"
+subtitle = ""
+claim = ""
+team = ["Zaynab", "Ekaterina", "Konstantin", "Nele", "Elisabeth"]
+supervisor = "Jonas Ehrhardt, Marino Gabel"
 draft = false
 
-
-# e.g. github
 source_link = ""
-# link to a demo site / where your project is available.
-# it's ok if it's temporary / just for the showtime, 
-# just send a pr when you take the demo site down.
 demo_link = ""
-# website: if you have another project website (not demo)
 website_link = ""
 +++
 
-Die Seite kann auf Englisch oder Deutsch sein. Aber bitte weder AI-generiertes blabla noch Werbetexte (etwa "entdecken Sie unsere revolutionäres Super-Programm das alle Probleme der Welt löst ;-) ) 
-
 {{<section title="Our Goal">}}
-Oder auch: Problemstellung, Projektidee, Zielsetzung, Aufgabe - so wie sie gestellt wurde, ggfs. aber auch mit Anpassungen oder
-Aktualisierungen. 
 
-* **Subheader 1**
-Oft enthält die Zielsetzung schon die Lösungsidee - dies könnte aber ein eigener Subheader sein.
+**Problem**
+
+Fresh water and cultivable land are running short, which challenges the research initiative food4future to work on these problems. How do we keep everyone fed with a healthy diet if these resources become scarce? Their answer involves food sources most people have never cooked with, e.g. organisms like jellyfish and macroalgae grown in urban food systems. This shift is hard to teach through information alone. People need a reason to actually want to cook and eat this way, not just be told it's necessary.
+
+**Goal**
+
+In collaboration with food4future, this project turns their sustainable recipes into a cooking game that teaches them through play instead of instruction. Players run a kitchen offering food4future's ingredients in a future where recourses are scare. The goal is to make food4future's vision for future nutrition something players discover and enjoy, not just read about.
 
 {{</section>}}
 
-
 {{<section title="Process and Outcome">}}
-* **Process**
-How we built it, Vorgehen, Arbeitsschritte, unser Weg dahin.
-If you feel that this page becomes too long, consider adding subpages!
 
-* **Product/Outcome**
+**Concept & Scope**  
+The idea was to integrate AI into the cooking game to enhance the game experience. The setting involves food4future's ingredients, giving players a reason to be cooking with algae and seaweed instead of everyday groceries. The scope was kept deliberately small for the MVP: One kitchen and a handful of recipes so the team could focus on finding creative ways of integrating agentic AI into the virtual world.
 
-Produkt, Ergebnis, was haben Sie gebaut/umgesetzt, inklusive einer Characterisierung, um welche Art von Software es sich handelt, etwa  "ein mit Unity umgesetztes Multiplayer Role Playing Game, eine Mobile Anwendung in xy, eine Webanwendung ..." - mit einem oder mehreren Screenshots oder anderen geeigneten Fotos.
-Ein detailliereres Architekturdiagramm kommt eher auf eine Folgeseite.
-You can add any section with any title that you need, and you can add headers within your sections:
+**Implementation**  
+The game runs with a Unity frontend and a Python backend communicationg over a REST API. Dialogue and cooking guidance go through LangChain agents calling a Groq-hosted LLaMA model with a local ChromaDB storing the recipes. If the player is interested in informations that aren't stored in the database, a web search fills the knowledge gap. Voice input goes through Faster-Whisper and every line gets spoken back through Piper with a different voice per character.
+
+
+**Outcome**  
+The result is a cooking game where players run a kitchen using food4future's sustainable ingredients. Customer NPCs are voiced and generated in real time so orders and small talk play out differently each visit. The cooking assistant walks players through recipes, answering questions with knowledge retrieved from a database.
+
 {{</section>}} 
 
 
 {{<section title="Team">}}
 
-Es reicht die Nennung der Namen (auf Wunsch nur Vorname), ggfs. wer welche Teile im Projekt übernommen hat. 
+In the beginning the team conducted collaborative research and conceptual planning. Later, we split into 2 groups focusing on Frontend and Backend development.
 
+**Frontend Team**
+- UI/UX design
+- Frontend development with Unity
 
-* **Subheader 1**
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis neque id vulputate malesuada. Quisque dignissim finibus urna sed sagittis. 
-
-
-* **Subheader 2**
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis neque id vulputate malesuada. Quisque dignissim finibus urna sed sagittis. 
-
-* **Subheader 3**
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis neque id vulputate malesuada. Quisque dignissim finibus urna sed sagittis. 
+**Backend Team**
+- Backend development with Python/ FastAPI
+- Integration of Groq LLM, Langchain and voice models
+- Database architecture and setup
 
 {{</section>}} 
-
-
-
-{{<gallery>}}
-{{<team-member image="cat.jpg" name="team member cat">}}
-{{</gallery>}}
-
