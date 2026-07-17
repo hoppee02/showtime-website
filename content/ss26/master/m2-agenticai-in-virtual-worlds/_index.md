@@ -1,8 +1,10 @@
 +++
 project_id = "M2"
 title = "Agentic AI in virtual worlds"
-subtitle = ""
-claim = ""
+subtitle = "An AI-powered cooking game for sustainable food education"
+claim = "Learn how to cook the food of the future through intelligent virtual characters!"
+card_image = "project_images/logo.jpg"
+
 team = ["Zaynab", "Ekaterina", "Konstantin", "Nele", "Elisabeth"]
 supervisor = "Jonas Ehrhardt, Marino Gabel"
 draft = false
@@ -20,7 +22,7 @@ Fresh water and cultivable land are running short, which challenges the research
 
 **Goal**
 
-In collaboration with food4future, this project turns their sustainable recipes into a cooking game that teaches them through play instead of instruction. Players run a kitchen offering food4future's ingredients in a future where recourses are scare. The goal is to make food4future's vision for future nutrition something players discover and enjoy, not just read about.
+In collaboration with food4future, this project turns their sustainable recipes into a cooking game that teaches them through play instead of instruction. Players run a kitchen offering food4future's ingredients in a future where resources are scarce. The goal is to make food4future's vision for future nutrition something players discover and enjoy, not just read about.
 
 {{</section>}}
 
@@ -30,7 +32,7 @@ In collaboration with food4future, this project turns their sustainable recipes 
 The idea was to integrate AI into the cooking game to enhance the game experience. The setting involves food4future's ingredients, giving players a reason to be cooking with algae and seaweed instead of everyday groceries. The scope was kept deliberately small for the MVP: One kitchen and a handful of recipes so the team could focus on finding creative ways of integrating agentic AI into the virtual world.
 
 **Implementation**  
-The game runs with a Unity frontend and a Python backend communicationg over a REST API. Dialogue and cooking guidance go through LangChain agents calling a Groq-hosted LLaMA model with a local ChromaDB storing the recipes. If the player is interested in informations that aren't stored in the database, a web search fills the knowledge gap. Voice input goes through Faster-Whisper and every line gets spoken back through Piper with a different voice per character.
+The game runs with a Unity frontend and a Python backend communicationg over a REST API. Dialogue and cooking guidance go through LangChain agents calling a Groq-hosted LLaMA model with a local ChromaDB storing the recipes. If the player is interested in information that isn't stored in the database, a web search fills the knowledge gap. Voice input goes through Faster-Whisper and every line gets spoken back through Piper with a different voice per character.
 
 
 **Outcome**  

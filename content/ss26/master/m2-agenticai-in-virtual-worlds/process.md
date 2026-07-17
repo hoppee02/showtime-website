@@ -6,18 +6,18 @@ draft = false
 
 {{<section title="Research">}}
 
-In the beginning the focus was on understanding what agentic AI frameworks and architectures were available. The team also researched who the game should be built for, comparing professional cooks with hobby cooks, and settled on hobby cooks since they'd get the most out of simple guided recipe steps. In addition, we compared different LLMs and voice models. Cloud STT/TTS services are usually paid and add latency, so the team looked into alternatives that run locally for free. There was also a research regarding food4future's work, which contains sustainable ingredients (algae, insects, seaweed) and how those could be turned into recipe content. All ideas and concepts were collected on Miro board. 
+In the beginning the focus was on understanding what agentic AI frameworks and architectures were available. The team also researched who the game should be built for, comparing professional cooks with hobby cooks, and settled on hobby cooks since they'd get the most out of simple guided recipe steps. In addition, we compared different LLMs and voice models. Cloud STT/TTS services are usually paid and add latency, so the team looked into alternatives that run locally for free. There was also a research regarding food4future's work, which contains sustainable ingredients (algae, insects, seaweed) and how those could be turned into recipe content. All ideas and concepts were collected on the Miro board. 
 
 {{</section>}}
 
 {{<section title="Conception">}}
 
-The conception phase started with an ideation workshop, using methods like Crazy 8 to narrow down ideas for the game. From there, the team worked through several design tasks to create the concept. For example, we used empathy maps to try to understand the players better or did the Frame Your Design Challenge to define the problem being solved. Also a moodboard was created to settle on the game's visual and narrative tone. In conclusion we agreed on acceptance criterias for an MVP which is the scope the team would build first.
+The conception phase started with an ideation workshop, using methods like Crazy 8 to narrow down ideas for the game. From there, the team worked through several design tasks to create the concept. For example, we used empathy maps to try to understand the players better or did the Frame Your Design Challenge to define the problem being solved. Also a moodboard was created to settle on the game's visual and narrative tone. In conclusion we agreed on acceptance criteria for an MVP which is the scope the team would build first.
 
 {{</section>}}
 
 {{<section title="Implementation Strategy">}}
-The two components of the project, the Unity client and the Python backend, were built communicate through a small REST API so both sides could move independently without constantly blocking on each other. On the backend features were built incrementally. We started with the basic setup of the LLM and the voice models. Subsequently, the tasks focused on integrating Langchain and the vectorization of the data. Then we worked on game logic, e.g. NPC spawning/ conversations. In the meantime the frontend team worked on the game mechanics and User Interface (todo please describe here shortly)
+The two components of the project, the Unity client and the Python backend, were built to communicate through a small REST API so both sides could move independently without constantly blocking on each other. On the backend features were built incrementally. We started with the basic setup of the LLM and the voice models. Subsequently, the tasks focused on integrating Langchain and the vectorization of the data. Then we worked on game logic, e.g. NPC spawning/ conversations. In the meantime the frontend team worked on the game mechanics and User Interface.
 In order to keep track of our progress we used the Kanban board in Gitlab to create tasks and assign them to team members. We introduced internal weeklys where we discussed our progress and problems. In addition, we had meetings with our supervisors every week to present our results.
 
 {{</section>}}

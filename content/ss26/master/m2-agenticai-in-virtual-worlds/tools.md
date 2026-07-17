@@ -37,7 +37,7 @@ The primary programming language used for frontend development in Unity, impleme
 **[FastAPI](https://fastapi.tiangolo.com/)**  
 Python web framework used to implement the REST API that connects Unity with the AI services, speech processing, and the recipe database.
 
-**[Uvicorn](https://www.uvicorn.org/)**  
+**[Uvicorn](https://uvicorn.dev/)**  
 ASGI web server used to run the FastAPI application, providing high-performance asynchronous request handling during development and deployment.
 
 **[Python](https://www.python.org/)**  

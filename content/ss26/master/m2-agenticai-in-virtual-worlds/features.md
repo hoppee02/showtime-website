@@ -28,13 +28,14 @@ The cooking simulation is set in a sustainable kitchen where players work with i
 
 {{<section title="AI-Driven Systems">}}
 
-- **Dynamic NPC Conversations**  
+* **Dynamic NPC Conversations**  
   Customer personalities, dialogue, and food preferences are generated in real time by a LLM, ensuring that each interaction is unique and not hardcoded.
+
 
 - **Retrieval-Augmented Cooking Assistant**  
   Recipe instructions and cooking guidance are retrieved from a vector database, allowing the AI assistant to provide instructions based on stored recipe knowledge.
 
-- **Web Search Fallback**  
+* **Web Search Fallback**  
   When players ask questions beyond the database knowledge, the assistant can retrieve information from the web to provide relevant answers.
 
 - **Local Speech Processing**  
