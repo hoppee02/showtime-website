@@ -61,7 +61,7 @@ Despite the challenges of synchronizing real-time 3D state changes with generati
 
 
 **Outcome**  
-The prototype enables the playful exploration of future nutrition, allowing users to discover ingredient substitutions and recipes using novel food algae. Traditional game mechanics are complemented by open-ended interactions, enabling the AI chef to answer spontaneous questions, have disussions with customers and assisst during the cooking. This framework helps users, especially younger audiences, to efficiently grasp sustainable cooking concepts through hands-on collaboration rather than passive instruction.
+The prototype enables the playful exploration of future nutrition, allowing users to discover ingredient substitutions and recipes using novel food algae. Traditional game mechanics are complemented by open-ended interactions, enabling the AI chef to answer spontaneous questions, have discussions with customers and assist during the cooking. This framework helps users, especially younger audiences, to efficiently grasp sustainable cooking concepts through hands-on collaboration rather than passive instruction.
 
 {{</section>}} 
 
