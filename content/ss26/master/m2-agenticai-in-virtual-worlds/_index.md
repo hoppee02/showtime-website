@@ -53,7 +53,7 @@ The objective of this master's project is twofold:
 Drawing on concepts from our courses in Human-AI-Interaction, Game Design, and Web Development, we designed an interactive 3D learning framework to communicate complex sustainability research. To balance technical feasibility with educational depth, we focused the experience on a targeted culinary scenario in a from of a virtual small restaurant. This constrained environment allows us to effectively demonstrate the capabilities of an Embodied AI and contextualize F4F's vision for locally cultivated ingredients without the overhead of complex, rigid game loops.
 
 **Implementation**  
-Development followed an iterative process bridging game design and artificial intelligence. The interactive environment is built using Unity and C#, presenting a responsive 3D kitchen where the Embodied AI is visually represented as a virtual assisstant-scientist.
+Development followed an iterative process bridging game design and artificial intelligence. The interactive environment is built using Unity and C#, presenting a responsive 3D kitchen where the Embodied AI is visually represented as a virtual assistant-scientist.
 
 The backend architecture replaces standard finite-state machine NPC logic by utilizing LangChain to orchestrate a Large Language Model (LLM) and a Retrieval-Augmented Generation (RAG) pipeline. This pipeline is populated with F4F's scientific material on novel foods. To enable a seamless, hands-free interface, the system integrates Speech-to-Text (STT) and Text-to-Speech (TTS) models. Together, this setup allows the AI to process the player's spoken inquiries and in-game actions, retrieve context-aware information, and generate scientifically accurate, voiced dialogue dynamically.
 
