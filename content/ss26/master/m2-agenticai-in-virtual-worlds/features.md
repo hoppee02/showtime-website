@@ -31,7 +31,7 @@ The AI does not treat each input in isolation. Through advanced session manageme
 **Multi-Agent Dynamics**  
 The framework supports autonomous interactions beyond the player. The system features AI-to-AI communication, allowing virtual customers and the AI assistant to converse dynamically with one another, creating a lively and reactive virtual world.
 
-{{<mediathek id="d5353d02878ca2d723406e3262e55783" title="Interaction between Assistant and Customer">}}
+{{<mediathek id="d5353d02878ca2d723406e3262e55783">}}
 
 {{</section>}}
 
